@@ -15,7 +15,10 @@ def launch(prof, args=None):
 	cmd.append("--profile " + prof['path'])
 	#cmd.append("--new-tab " + url)
 	#cmd.append("--new-window " + url)
-	cmd.append(args['link'])
+
+	if (args['link']):
+		cmd.append(args['link'])
+
 	cmd.append(">/dev/null")
 	cmd.append("2>&1")
 	cmd.append("&")
@@ -26,5 +29,4 @@ def launch(prof, args=None):
 
 	os.system(cmd)
 
-	#return PID;
 #end-def
