@@ -46,7 +46,6 @@ class Fabula_Window(Gtk.Window):
 		self.set_default_size(640, 480)
 		self.set_size_request(640, 480)
 		self.set_decorated(True)
-		self.set_double_buffered(True)
 		self.set_hide_titlebar_when_maximized(True)
 		self.set_icon( Gtk.IconTheme.get_default().load_icon(ICON, 64, 0) )
 		self.set_position(Gtk.WindowPosition.CENTER_ALWAYS)
@@ -59,7 +58,7 @@ class Fabula_Window(Gtk.Window):
 
 		self.add_head()
 
-		self.vbox = Gtk.VBox(False, 0)
+		self.vbox = Gtk.Box.new(orientation=Gtk.Orientation.VERTICAL, spacing=0)
 		self.add(self.vbox)
 
 		self.add_profile_list()
