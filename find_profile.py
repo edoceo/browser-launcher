@@ -79,7 +79,7 @@ def _find_browser_profiles(path):
 #
 def _find_browser_profile_icon(prof):
 
-	print("Icon: " + prof['path'])
+	# print("Icon: " + prof['path'])
 
 	# Default Icon
 	icon = Gtk.IconTheme.get_default().load_icon(ICON, ICON_SIZE, 0)
