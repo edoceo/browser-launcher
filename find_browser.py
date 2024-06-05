@@ -16,6 +16,10 @@ _find_browser_list = [
 	"google-chrome-canary",
 	"firefox-bin",
 	"firefox",
+	"brave"
+	"icecat",
+	"iceweasel",
+	"librewolf",
 	"midori",
 	"opera",
 	"opera-developer",
@@ -43,7 +47,6 @@ def get_browser_list():
 				browser_list.append(full_path)
 
 	return browser_list
-
 
 
 	#end-for
